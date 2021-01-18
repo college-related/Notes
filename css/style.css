@@ -1,0 +1,64 @@
+@keyframes slide {
+    from {
+        left: -100%;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes pop {
+    from {
+        opacity: 0;
+        bottom: -100%;
+    }
+    to {
+        opacity: 1;
+        bottom: 20px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu, .closeMenu {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    color: #000000;
+    padding: 0 1em;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.menu {
+    left: 30px;
+    background-color: #f07c7c;
+}
+
+.closeMenu {
+    right: 30px;
+    background-color: #d68e8e;
+    display: none;
+    animation: pop 0.5s ease-in-out;
+}
+
+.active-sidebar {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    background-color: #f8f8f8;
+    line-height: 2em;
+    animation: slide 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 800px){
+    .menu, .closeMenu {
+        display: none;
+    }
+}
