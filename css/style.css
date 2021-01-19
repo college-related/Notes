@@ -57,6 +57,17 @@ html {
     animation: slide 0.5s ease-in-out;
 }
 
+.night {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    background-color: coral;
+    padding: .5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
 @media screen and (min-width: 800px){
     .menu, .closeMenu {
         display: none;
