@@ -73,3 +73,9 @@ html {
         display: none;
     }
 }
+
+@media screen and (max-with: 700px){
+    .tb {
+        font-size: .2rem;
+    }
+}
