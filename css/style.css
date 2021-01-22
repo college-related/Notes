@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @keyframes slide {
     from {
         left: -100%;
@@ -22,6 +25,10 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 .menu, .closeMenu {
