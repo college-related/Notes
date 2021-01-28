@@ -5,6 +5,7 @@ var list = document.querySelector(".stackedit__toc");
 // .children.item(0).children.item(0).children.item(1).children;
 var closeMenu = document.querySelector(".closeMenu");
 var mainList = document.querySelectorAll(".mainLink");
+var codeList = document.querySelectorAll("code");
 
 if(!localStorage.getItem("nightMode")){
     localStorage.setItem("nightMode", "0");
@@ -28,6 +29,10 @@ function modeChoose(){
     
         closeMenu.style.backgroundColor = "#a9a9a9d8";
         closeMenu.style.color = "#000000";
+
+        for(var i = 0; i < codeList.length; i++){
+            codeList[i].style.backgroundColor = "#00000055";
+        }
     }else{
         document.querySelector(".stackedit__right").style.backgroundColor = "#ffffff";
         document.querySelector(".stackedit__right").style.color = "#000000";
@@ -43,6 +48,10 @@ function modeChoose(){
     
         menu.style.backgroundColor = "#f07c7c";
         closeMenu.style.backgroundColor = "#d68e8e";
+
+        for(var i = 0; i < codeList.length; i++){
+            codeList[i].style.backgroundColor = "rgba(0,0,0,.05)";
+        }
     }
 }
 
@@ -88,6 +97,10 @@ night.addEventListener('click', function(){
         closeMenu.style.backgroundColor = "#a9a9a9d8";
         closeMenu.style.color = "#000000";
 
+        for(var i = 0; i < codeList.length; i++){
+            codeList[i].style.backgroundColor = "#00000055";
+        }
+
         localStorage.setItem("nightMode", "1");
     }else{
         document.querySelector(".stackedit__right").style.backgroundColor = "#ffffff";
@@ -104,6 +117,10 @@ night.addEventListener('click', function(){
 
         menu.style.backgroundColor = "#f07c7c";
         closeMenu.style.backgroundColor = "#d68e8e";
+
+        for(var i = 0; i < codeList.length; i++){
+            codeList[i].style.backgroundColor = "rgba(0,0,0,.05)";
+        }
 
         localStorage.setItem("nightMode", "0");
     }
