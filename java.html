@@ -2060,9 +2060,12 @@
     <span class="token punctuation">}</span>
 </code></pre>
 <ul>
-<li>
-<h2 id="draw-a-rectangle-color-it-green-now-make-a-flag-of-nepal-inside-of-the-rectangle-and-write-my-nepal-at-the-bottom-of-the-rectangle.">Draw a Rectangle color it green, now make a flag of nepal inside of the rectangle and write My Nepal at the bottom of the rectangle.</h2>
-</li>
+    <li>
+        <h2
+            id="draw-a-rectangle-color-it-green-now-make-a-flag-of-nepal-inside-of-the-rectangle-and-write-my-nepal-at-the-bottom-of-the-rectangle.">
+            Draw a Rectangle color it green, now make a flag of nepal inside of the rectangle and write My Nepal at the
+            bottom of the rectangle.</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">    <span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
 
@@ -2099,8 +2102,11 @@
     <span class="token punctuation">}</span>
 </code></pre>
 <ul>
-<li>
-    <h2 id="create-a-gui-that-contains-a-button-and-two-text-fields.-when-the-button-is-clicked-the-value-of-first-text-field-should-be-checked-and-display-odd-number-or-even-number-in-the-second-text-field.">Create a GUI that contains a button, and two text fields. When the button is clicked the value of first text field should be checked and display “odd number” or “even number” in the second text field.</h2>
+    <li>
+        <h2
+            id="create-a-gui-that-contains-a-button-and-two-text-fields.-when-the-button-is-clicked-the-value-of-first-text-field-should-be-checked-and-display-odd-number-or-even-number-in-the-second-text-field.">
+            Create a GUI that contains a button, and two text fields. When the button is clicked the value of first text
+            field should be checked and display “odd number” or “even number” in the second text field.</h2>
     </li>
 </ul>
     <pre class=" language-java"><code class="prism  language-java">
@@ -2158,23 +2164,32 @@
     </code></pre>
 <h1 id="jdbc-and-its-drivers"><code>JDBC and its drivers</code></h1>
 <ul>
-<li>
-<h2 id="definition-5">Definition</h2>
-<ul>
-<li><code>JDBC Driver</code> is a software component that enables java application to interact with the database.</li>
-<li>There are 4 types of JDBC Driver:-
-<ol>
-<li><strong><code>JDBC-ODBC bridge Driver</code></strong>: The JDBC-ODBC bridge driver uses ODBC driver to connect to the database. The JDBC-ODBC bridge driver converts JDBC method calls into the ODBC function calls. This is now discouraged because of thin driver.</li>
-<li><strong><code>Native-API Driver</code></strong>: The Native API driver uses the client-side libraries of the database. The driver converts JDBC methods calls into native calls of the database API. It is not written entirely in java.</li>
-<li><strong><code>Network protocal Driver</code></strong>: The Network Protocol driver uses middleware (application server) that converts JDBC calls directly or indirectly into the vendor-specific database protocol. It is fully written in java.</li>
-<li><strong><code>Thin Driver</code></strong>: The thin driver converts JDBC calls directly into the vendor-specific database protocol. That is why it is known as thin driver. It is fully written in Java language.</li>
-</ol>
-</li>
-</ul>
-</li>
-<li>
-<h2 id="program-to-connect-to-a-database-in-localhost">Program to connect to a database in localhost</h2>
-</li>
+    <li>
+        <h2 id="definition-5">Definition</h2>
+        <ul>
+            <li><code>JDBC Driver</code> is a software component that enables java application to interact with the
+                database.</li>
+            <li>There are 4 types of JDBC Driver:-
+                <ol>
+                    <li><strong><code>JDBC-ODBC bridge Driver</code></strong>: The JDBC-ODBC bridge driver uses ODBC
+                        driver to connect to the database. The JDBC-ODBC bridge driver converts JDBC method calls into
+                        the ODBC function calls. This is now discouraged because of thin driver.</li>
+                    <li><strong><code>Native-API Driver</code></strong>: The Native API driver uses the client-side
+                        libraries of the database. The driver converts JDBC methods calls into native calls of the
+                        database API. It is not written entirely in java.</li>
+                    <li><strong><code>Network protocal Driver</code></strong>: The Network Protocol driver uses
+                        middleware (application server) that converts JDBC calls directly or indirectly into the
+                        vendor-specific database protocol. It is fully written in java.</li>
+                    <li><strong><code>Thin Driver</code></strong>: The thin driver converts JDBC calls directly into the
+                        vendor-specific database protocol. That is why it is known as thin driver. It is fully written
+                        in Java language.</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h2 id="program-to-connect-to-a-database-in-localhost">Program to connect to a database in localhost</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">
     <span class="token keyword">import</span> java<span class="token punctuation">.</span>sql<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
@@ -2194,23 +2209,27 @@
 </code></pre>
 <h1 id="statements"><code>Statements</code></h1>
 <ul>
-<li>
-<h2 id="definition-and-types">Definition and Types</h2>
-<ul>
-<li><code>Statements</code> are the interfaces define the methods and properties that enable you to send SQL or PL/SQL commands and receive data from your database.</li>
-<li>It also defines methods that help bridge data type difference between Java and SQL data types.</li>
-<li>There are 3 types of statements in java:-
-<ol>
-<li><strong><code>Statement</code></strong>: Use this for general-purpose access to your database. Useful when you are using static SQL statements at runtime. The Statement interface cannot accept parameters.</li>
-<li><strong><code>Prepared Statement</code></strong>: Use this when you plan to use the SQL statements many times. The PreparedStatement interface accepts input parameters at runtime.</li>
-<li>Callable Statement</li>
-</ol>
-</li>
-</ul>
-</li>
-<li>
-<h2 id="example-16">Example</h2>
-</li>
+    <li>
+        <h2 id="definition-and-types">Definition and Types</h2>
+        <ul>
+            <li><code>Statements</code> are the interfaces define the methods and properties that enable you to send SQL
+                or PL/SQL commands and receive data from your database.</li>
+            <li>It also defines methods that help bridge data type difference between Java and SQL data types.</li>
+            <li>There are 3 types of statements in java:-
+                <ol>
+                    <li><strong><code>Statement</code></strong>: Use this for general-purpose access to your database.
+                        Useful when you are using static SQL statements at runtime. The Statement interface cannot
+                        accept parameters.</li>
+                    <li><strong><code>Prepared Statement</code></strong>: Use this when you plan to use the SQL
+                        statements many times. The PreparedStatement interface accepts input parameters at runtime.</li>
+                    <li>Callable Statement</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h2 id="example-16">Example</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">
     <span class="token keyword">import</span> java<span class="token punctuation">.</span>sql<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
@@ -2248,16 +2267,17 @@
 </code></pre>
 <h1 id="resultset"><code>ResultSet</code></h1>
 <ul>
-<li>
-<h2 id="definition-6">Definition</h2>
-<ul>
-<li>The SQL statements that read data from a database query, return the data in a result set.</li>
-<li>In order to store them and read through them we use the <code>ResultSet</code> interface of the package <code>java.sql</code></li>
-</ul>
-</li>
-<li>
-<h2 id="example-17">Example</h2>
-</li>
+    <li>
+        <h2 id="definition-6">Definition</h2>
+        <ul>
+            <li>The SQL statements that read data from a database query, return the data in a result set.</li>
+            <li>In order to store them and read through them we use the <code>ResultSet</code> interface of the package
+                <code>java.sql</code></li>
+        </ul>
+    </li>
+    <li>
+        <h2 id="example-17">Example</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">
     <span class="token keyword">import</span> java<span class="token punctuation">.</span>sql<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
@@ -2296,19 +2316,23 @@
 </code></pre>
 <h1 id="connection-pooling"><code>Connection Pooling</code></h1>
 <ul>
-<li>
-<h2 id="definition-and-usage-10">Definition and Usage</h2>
-<ul>
-<li>For a database operation to complete, a connection must be established to the database, and the process is a time consuming and expensive process.</li>
-<li>Therefore <code>Connection pooling</code> has been implemented as a standard for most of the database drivers.</li>
-<li>The <code>connection pooling</code> creates connection and makes a pool of connection before they are needed.</li>
-<li>The connection is done in advance and the data search the connection pool and uses the preexisting connection whenever needed.</li>
-<li>After the completion of task the connection is not terminated but preserved and reused later.</li>
-</ul>
-</li>
-<li>
-<h2 id="example-18">Example</h2>
-</li>
+    <li>
+        <h2 id="definition-and-usage-10">Definition and Usage</h2>
+        <ul>
+            <li>For a database operation to complete, a connection must be established to the database, and the process
+                is a time consuming and expensive process.</li>
+            <li>Therefore <code>Connection pooling</code> has been implemented as a standard for most of the database
+                drivers.</li>
+            <li>The <code>connection pooling</code> creates connection and makes a pool of connection before they are
+                needed.</li>
+            <li>The connection is done in advance and the data search the connection pool and uses the preexisting
+                connection whenever needed.</li>
+            <li>After the completion of task the connection is not terminated but preserved and reused later.</li>
+        </ul>
+    </li>
+    <li>
+        <h2 id="example-18">Example</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">
     <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
@@ -2426,19 +2450,21 @@
 </code></pre>
 <h1 id="jbdc-api"><code>JBDC API</code></h1>
 <ul>
-<li>The Java Database Connectivity (JDBC) API provides universal data access from the Java programming language. Using the JDBC API, you can access virtually any data source, from relational databases to spreadsheets and flat files. JDBC technology also provides a common base on which tools and alternate interfaces can be built.</li>
-<li>The JDBC API is comprised of two packages:
-<ul>
-<li><code>java.sql</code></li>
-<li><code>javax.sql</code></li>
-</ul>
-</li>
+    <li>The Java Database Connectivity (JDBC) API provides universal data access from the Java programming language.
+        Using the JDBC API, you can access virtually any data source, from relational databases to spreadsheets and flat
+        files. JDBC technology also provides a common base on which tools and alternate interfaces can be built.</li>
+    <li>The JDBC API is comprised of two packages:
+        <ul>
+            <li><code>java.sql</code></li>
+            <li><code>javax.sql</code></li>
+        </ul>
+    </li>
 </ul>
 <h1 id="database-related-questions"><code>Database related questions</code></h1>
 <ul>
-<li>
-<h2 id="read-or-display-records-from-database">Read or Display records from database</h2>
-</li>
+    <li>
+        <h2 id="read-or-display-records-from-database">Read or Display records from database</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">
     <span class="token keyword">import</span> java<span class="token punctuation">.</span>sql<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
@@ -2466,9 +2492,9 @@
 
 </code></pre>
 <ul>
-<li>
-<h2 id="insert-into-database">Insert into database</h2>
-</li>
+    <li>
+        <h2 id="insert-into-database">Insert into database</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">
     <span class="token keyword">import</span> java<span class="token punctuation">.</span>sql<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
@@ -2491,9 +2517,9 @@
 
 </code></pre>
 <ul>
-<li>
-<h2 id="update-data-in-the-database">Update data in the database</h2>
-</li>
+    <li>
+        <h2 id="update-data-in-the-database">Update data in the database</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">
     <span class="token keyword">import</span> java<span class="token punctuation">.</span>sql<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
@@ -2515,9 +2541,9 @@
 
 </code></pre>
 <ul>
-<li>
-<h2 id="delete-from-database">Delete from database</h2>
-</li>
+    <li>
+        <h2 id="delete-from-database">Delete from database</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">
     <span class="token keyword">import</span> java<span class="token punctuation">.</span>sql<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
@@ -2540,17 +2566,19 @@
 </code></pre>
 <h1 id="socket"><code>Socket</code></h1>
 <ul>
-<li>
-<h2 id="definition-7">Definition</h2>
-<ul>
-<li>Java Socket programming is used for communication between the applications running on different JRE.</li>
-<li>Java Socket programming can be connection-oriented or connection-less.</li>
-<li>Socket and ServerSocket classes are used for connection-oriented socket programming and DatagramSocket and DatagramPacket classes are used for connection-less socket programming.</li>
-</ul>
-</li>
-<li>
-<h2 id="tcpip-communication-socket-programming">TCP/IP Communication/ Socket programming</h2>
-</li>
+    <li>
+        <h2 id="definition-7">Definition</h2>
+        <ul>
+            <li>Java Socket programming is used for communication between the applications running on different JRE.
+            </li>
+            <li>Java Socket programming can be connection-oriented or connection-less.</li>
+            <li>Socket and ServerSocket classes are used for connection-oriented socket programming and DatagramSocket
+                and DatagramPacket classes are used for connection-less socket programming.</li>
+        </ul>
+    </li>
+    <li>
+        <h2 id="tcpip-communication-socket-programming">TCP/IP Communication/ Socket programming</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">
     <span class="token comment">/*--Client-Side--*/</span>
@@ -2626,64 +2654,71 @@
 </code></pre>
 <h1 id="datagram-and-stream-communication"><code>Datagram and Stream Communication</code></h1>
 <ul>
-<li>
-<h2 id="definition-8">Definition</h2>
-<ul>
-<li>This class represents a connection-less socket for sending and receiving datagram packets.</li>
-<li>A datagram is basically an information but there is no guarantee of its content, arrival or arrival time.</li>
-<li>Constructor
-<ul>
-<li><code>DatagramSocket()</code> throws SocketException;
-<ul>
-<li>It creates a datagram socket and binds it with the available Port number on Local Machine.</li>
-</ul>
-</li>
-<li><code>DatagramSocket(int port)</code> throws SocketException;
-<ul>
-<li>It creates a datagram socket and binds it with the given port number.</li>
-</ul>
-</li>
-<li><code>Datagram(int port, InetAddress address)</code> throws SocketException;
-<ul>
-<li>It binds with the specified port and host address.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+    <li>
+        <h2 id="definition-8">Definition</h2>
+        <ul>
+            <li>This class represents a connection-less socket for sending and receiving datagram packets.</li>
+            <li>A datagram is basically an information but there is no guarantee of its content, arrival or arrival
+                time.</li>
+            <li>Constructor
+                <ul>
+                    <li><code>DatagramSocket()</code> throws SocketException;
+                        <ul>
+                            <li>It creates a datagram socket and binds it with the available Port number on Local
+                                Machine.</li>
+                        </ul>
+                    </li>
+                    <li><code>DatagramSocket(int port)</code> throws SocketException;
+                        <ul>
+                            <li>It creates a datagram socket and binds it with the given port number.</li>
+                        </ul>
+                    </li>
+                    <li><code>Datagram(int port, InetAddress address)</code> throws SocketException;
+                        <ul>
+                            <li>It binds with the specified port and host address.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
 </ul>
 <h1 id="multicasting"><code>Multicasting</code></h1>
 <ul>
-<li>
-<h2 id="definition-and-usage-11">Definition and Usage</h2>
-<ul>
-<li><code>Multicasting</code> in java is the process of sending data packets to only specific group nodes in the socket communication that are interested to recieve the data packets.</li>
-<li>Unlike <code>Broadcasting</code> and <code>Unicasting</code> where the data packets are send to either all nodes connected to the network or only a specific node, <code>Multicasting</code> can group specific nodes and send only them the data packets.</li>
-<li>We use the <code>MultiSocket</code> class for grouping sockets into specific IP’s</li>
-<li>It is used to create group of nodes in the network to share data.</li>
-</ul>
-</li>
+    <li>
+        <h2 id="definition-and-usage-11">Definition and Usage</h2>
+        <ul>
+            <li><code>Multicasting</code> in java is the process of sending data packets to only specific group nodes in
+                the socket communication that are interested to recieve the data packets.</li>
+            <li>Unlike <code>Broadcasting</code> and <code>Unicasting</code> where the data packets are send to either
+                all nodes connected to the network or only a specific node, <code>Multicasting</code> can group specific
+                nodes and send only them the data packets.</li>
+            <li>We use the <code>MultiSocket</code> class for grouping sockets into specific IP’s</li>
+            <li>It is used to create group of nodes in the network to share data.</li>
+        </ul>
+    </li>
 </ul>
 <h1 id="inetaddress-class"><code>InetAddress class</code></h1>
 <ul>
-<li>
-<h2 id="definition-9">Definition</h2>
-<ul>
-<li>It represents an IP address. It can convert domain name to IP address. Also it can perform DNS lookup.</li>
-<li>we use the <code>java.net</code> package to use the <code>InetAddress</code> class, that allows us to get the IP address of any host name.</li>
-<li>Some of the methods are:-
-<ol>
-<li><code>public String getHostName()</code></li>
-<li><code>public String getHostAddress()</code></li>
-<li><code>String toString()</code></li>
-</ol>
-</li>
-</ul>
-</li>
-<li>
-<h2 id="get-ip-address-list">Get IP address list</h2>
-</li>
+    <li>
+        <h2 id="definition-9">Definition</h2>
+        <ul>
+            <li>It represents an IP address. It can convert domain name to IP address. Also it can perform DNS lookup.
+            </li>
+            <li>we use the <code>java.net</code> package to use the <code>InetAddress</code> class, that allows us to
+                get the IP address of any host name.</li>
+            <li>Some of the methods are:-
+                <ol>
+                    <li><code>public String getHostName()</code></li>
+                    <li><code>public String getHostAddress()</code></li>
+                    <li><code>String toString()</code></li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h2 id="get-ip-address-list">Get IP address list</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">    <span class="token keyword">import</span> java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
     
@@ -2704,12 +2739,12 @@
 </code></pre>
 <h1 id="url-and-url-connection-classes"><code>URL and URL Connection classes</code></h1>
 <ul>
-<li>
-<h2 id="definition-10">Definition</h2>
-</li>
-<li>
-<h2 id="example-19">Example</h2>
-</li>
+    <li>
+        <h2 id="definition-10">Definition</h2>
+    </li>
+    <li>
+        <h2 id="example-19">Example</h2>
+    </li>
 </ul>
 <pre class=" language-java"><code class="prism  language-java">
     <span class="token keyword">import</span> java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
@@ -2757,373 +2792,390 @@
 </code></pre>
 <h1 id="difference"><code>Difference</code></h1>
 <ul>
-<li>
-<h2 id="interface-and-package">Interface and Package</h2>
-</li>
+    <li>
+        <h2 id="interface-and-package">Interface and Package</h2>
+    </li>
 </ul>
 
 <table>
-<thead>
-<tr>
-<th><strong>Package</strong></th>
-<th><strong>Interface</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>It is a pack or group of class, interface that allows for easier reusablility.</td>
-<td>It is blueprint for class where there are only final instance variables and only abstract methods.</td>
-</tr>
-<tr>
-<td><code>package</code> keyword is used to make a package.</td>
-<td><code>interface</code> keyword is used to make a Interface.</td>
-</tr>
-<tr>
-<td><code>import</code> keyword is used to import the package.</td>
-<td><code>implements</code> keyword is used to implement the interface.</td>
-</tr>
-<tr>
-<td><strong>Syntax:</strong> <code>package package_name;</code></td>
-<td><strong>Syntax:</strong> <code>interface Interface_name {}</code></td>
-</tr>
-</tbody>
-</table><ul>
-<li>
-<h2 id="interface-abstract-class-and-class">Interface, abstract class and class</h2>
-</li>
+    <thead>
+        <tr>
+            <th><strong>Package</strong></th>
+            <th><strong>Interface</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>It is a pack or group of class, interface that allows for easier reusablility.</td>
+            <td>It is blueprint for class where there are only final instance variables and only abstract methods.</td>
+        </tr>
+        <tr>
+            <td><code>package</code> keyword is used to make a package.</td>
+            <td><code>interface</code> keyword is used to make a Interface.</td>
+        </tr>
+        <tr>
+            <td><code>import</code> keyword is used to import the package.</td>
+            <td><code>implements</code> keyword is used to implement the interface.</td>
+        </tr>
+        <tr>
+            <td><strong>Syntax:</strong> <code>package package_name;</code></td>
+            <td><strong>Syntax:</strong> <code>interface Interface_name {}</code></td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>
+        <h2 id="interface-abstract-class-and-class">Interface, abstract class and class</h2>
+    </li>
 </ul>
 
 <table>
-<thead>
-<tr>
-<th>Interface</th>
-<th>Abstract class</th>
-<th>Class</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>It is a blueprint for class which contains only final instance variables and methods definition.</td>
-<td>It is a special type of class which contains at least one abstract method.</td>
-<td>Class is a feature of OOP that contains methods and instance variables.</td>
-</tr>
-<tr>
-<td>Has only final instance variables.</td>
-<td>Has any kind of instance variables.</td>
-<td>Has any kind of instance variables.</td>
-</tr>
-<tr>
-<td>Has only method definition.</td>
-<td>Has both normal and abstract methods.</td>
-<td>Has only normal methods.</td>
-</tr>
-<tr>
-<td>Cannot have its own object.</td>
-<td>Cannot have its own object.</td>
-<td>Can have its own object.</td>
-</tr>
-<tr>
-<td>It is implemented.</td>
-<td>It is extended.</td>
-<td>It is extended.</td>
-</tr>
-<tr>
-<td>Syntax:- <code>interface InterfaceName</code></td>
-<td>Syntax:- <code>abstract class className</code></td>
-<td>Syntax:- <code>class className</code></td>
-</tr>
-</tbody>
-</table><ul>
-<li>
-<h2 id="checked-and-unchecked-exception">Checked and Unchecked Exception</h2>
-</li>
+    <thead>
+        <tr>
+            <th>Interface</th>
+            <th>Abstract class</th>
+            <th>Class</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>It is a blueprint for class which contains only final instance variables and methods definition.</td>
+            <td>It is a special type of class which contains at least one abstract method.</td>
+            <td>Class is a feature of OOP that contains methods and instance variables.</td>
+        </tr>
+        <tr>
+            <td>Has only final instance variables.</td>
+            <td>Has any kind of instance variables.</td>
+            <td>Has any kind of instance variables.</td>
+        </tr>
+        <tr>
+            <td>Has only method definition.</td>
+            <td>Has both normal and abstract methods.</td>
+            <td>Has only normal methods.</td>
+        </tr>
+        <tr>
+            <td>Cannot have its own object.</td>
+            <td>Cannot have its own object.</td>
+            <td>Can have its own object.</td>
+        </tr>
+        <tr>
+            <td>It is implemented.</td>
+            <td>It is extended.</td>
+            <td>It is extended.</td>
+        </tr>
+        <tr>
+            <td>Syntax:- <code>interface InterfaceName</code></td>
+            <td>Syntax:- <code>abstract class className</code></td>
+            <td>Syntax:- <code>class className</code></td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>
+        <h2 id="checked-and-unchecked-exception">Checked and Unchecked Exception</h2>
+    </li>
 </ul>
 
 <table>
-<thead>
-<tr>
-<th>Checked Exception</th>
-<th>Unchecked Exception</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>They are the Exception which are checked during the compile time.</td>
-<td>They are the Exception which are checked during runtime.</td>
-</tr>
-<tr>
-<td>If program counters a checked exception then the byte code is not produced.</td>
-<td>If program encounters a unchecked exception then it will produce the byte code but might crash the application.</td>
-</tr>
-<tr>
-<td>They are the direct sub classes of <code>Exception</code> class.</td>
-<td>They are the direct sub classes of <code>RunTimeException</code> class which is a subclass of <code>Exception</code> class.</td>
-</tr>
-<tr>
-<td>Ex:- <code>IOException</code>, <code>ClassNotFoundException</code>, etc</td>
-<td>Ex:- <code>ArithmeticException</code>, <code>NullPointerException</code>, etc</td>
-</tr>
-</tbody>
-</table><ul>
-<li>
-<h2 id="applet-and-java-applicationnormal-java-application">Applet and Java application/Normal Java application</h2>
-</li>
+    <thead>
+        <tr>
+            <th>Checked Exception</th>
+            <th>Unchecked Exception</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>They are the Exception which are checked during the compile time.</td>
+            <td>They are the Exception which are checked during runtime.</td>
+        </tr>
+        <tr>
+            <td>If program counters a checked exception then the byte code is not produced.</td>
+            <td>If program encounters a unchecked exception then it will produce the byte code but might crash the
+                application.</td>
+        </tr>
+        <tr>
+            <td>They are the direct sub classes of <code>Exception</code> class.</td>
+            <td>They are the direct sub classes of <code>RunTimeException</code> class which is a subclass of
+                <code>Exception</code> class.</td>
+        </tr>
+        <tr>
+            <td>Ex:- <code>IOException</code>, <code>ClassNotFoundException</code>, etc</td>
+            <td>Ex:- <code>ArithmeticException</code>, <code>NullPointerException</code>, etc</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>
+        <h2 id="applet-and-java-applicationnormal-java-application">Applet and Java application/Normal Java application
+        </h2>
+    </li>
 </ul>
 
 <table>
-<thead>
-<tr>
-<th>Applet</th>
-<th>Java Program</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>They are the java program that runs on a browser.</td>
-<td>They are the java program that runs on a Java runtime environment.</td>
-</tr>
-<tr>
-<td>They don’t need a main method to start the program.</td>
-<td>They need a main method to start the program.</td>
-</tr>
-<tr>
-<td>They need HTML file as they run on browser.</td>
-<td>They don’t need a HTML file.</td>
-</tr>
-</tbody>
-</table><ul>
-<li>
-<h2 id="awt-and-swing">AWT and Swing</h2>
-</li>
+    <thead>
+        <tr>
+            <th>Applet</th>
+            <th>Java Program</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>They are the java program that runs on a browser.</td>
+            <td>They are the java program that runs on a Java runtime environment.</td>
+        </tr>
+        <tr>
+            <td>They don’t need a main method to start the program.</td>
+            <td>They need a main method to start the program.</td>
+        </tr>
+        <tr>
+            <td>They need HTML file as they run on browser.</td>
+            <td>They don’t need a HTML file.</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>
+        <h2 id="awt-and-swing">AWT and Swing</h2>
+    </li>
 </ul>
 
 <table>
-<thead>
-<tr>
-<th>AWT</th>
-<th>Swing</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Java AWT is an API to develop GUI applications in Java</td>
-<td>Swing is a part of Java Foundation Classes and is used to create various applications.</td>
-</tr>
-<tr>
-<td>The components of Java AWT are <code>heavy weighted.</code></td>
-<td>The components of Java Swing are <code>light weighted.</code></td>
-</tr>
-<tr>
-<td>The components of Java AWT are <code>platform dependent.</code></td>
-<td>The components of Java Swing are <code>platform independent.</code></td>
-</tr>
-<tr>
-<td>AWT provides comparatively <code>less powerful components.</code></td>
-<td>Swing provides more <code>powerful components.</code></td>
-</tr>
-<tr>
-<td>The execution time of AWT is more than Swing.</td>
-<td>The execution time of Swing is less than AWT.</td>
-</tr>
-</tbody>
-</table><ul>
-<li>
-<h2 id="frame-and-panel">Frame and Panel</h2>
-</li>
+    <thead>
+        <tr>
+            <th>AWT</th>
+            <th>Swing</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Java AWT is an API to develop GUI applications in Java</td>
+            <td>Swing is a part of Java Foundation Classes and is used to create various applications.</td>
+        </tr>
+        <tr>
+            <td>The components of Java AWT are <code>heavy weighted.</code></td>
+            <td>The components of Java Swing are <code>light weighted.</code></td>
+        </tr>
+        <tr>
+            <td>The components of Java AWT are <code>platform dependent.</code></td>
+            <td>The components of Java Swing are <code>platform independent.</code></td>
+        </tr>
+        <tr>
+            <td>AWT provides comparatively <code>less powerful components.</code></td>
+            <td>Swing provides more <code>powerful components.</code></td>
+        </tr>
+        <tr>
+            <td>The execution time of AWT is more than Swing.</td>
+            <td>The execution time of Swing is less than AWT.</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>
+        <h2 id="frame-and-panel">Frame and Panel</h2>
+    </li>
 </ul>
 
 <table>
-<thead>
-<tr>
-<th>Panel</th>
-<th>Frame</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>An AWT component which represents a simple container that can attach other GUI components including other panels.</td>
-<td>An AWT compnent which is a top level window with border and title.</td>
-</tr>
-<tr>
-<td>A subclass of Container.</td>
-<td>A subclass of Window</td>
-</tr>
-<tr>
-<td>Doesn’t have title and border.</td>
-<td>Have title and border.</td>
-</tr>
-<tr>
-<td>Possible to add another panel within.</td>
-<td>Not possible to add another Frame within.</td>
-</tr>
-<tr>
-<td>Use FlowLayout as default layout manager.</td>
-<td>Uses BorderLayout as default layout manager.</td>
-</tr>
-</tbody>
-</table><ul>
-<li>
-<h2 id="gridbag-layout-and-grid-layout">GridBag Layout and Grid Layout</h2>
-</li>
+    <thead>
+        <tr>
+            <th>Panel</th>
+            <th>Frame</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>An AWT component which represents a simple container that can attach other GUI components including
+                other panels.</td>
+            <td>An AWT compnent which is a top level window with border and title.</td>
+        </tr>
+        <tr>
+            <td>A subclass of Container.</td>
+            <td>A subclass of Window</td>
+        </tr>
+        <tr>
+            <td>Doesn’t have title and border.</td>
+            <td>Have title and border.</td>
+        </tr>
+        <tr>
+            <td>Possible to add another panel within.</td>
+            <td>Not possible to add another Frame within.</td>
+        </tr>
+        <tr>
+            <td>Use FlowLayout as default layout manager.</td>
+            <td>Uses BorderLayout as default layout manager.</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>
+        <h2 id="gridbag-layout-and-grid-layout">GridBag Layout and Grid Layout</h2>
+    </li>
 </ul>
 
 <table>
-<thead>
-<tr>
-<th>GridBag Layout</th>
-<th>Grid Layout</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>It is a flexible layout manager that aligns the components vertically and horizontally without requiring to have components of same size.</td>
-<td>It puts all the components in a rectangular grid and is divided into equal size rectangles.</td>
-</tr>
-<tr>
-<td>It places the components in individual cells and also allows to span to multiple column or rows.</td>
-<td>It places the components in column and rows.</td>
-</tr>
-<tr>
-<td><code>GridBagConstraints</code> objects must be used to make a GridBag layout.</td>
-<td><code>GridLayout</code> class is used to make object of it.</td>
-</tr>
-<tr>
-<td>It is more flexible.</td>
-<td>It is less flexible.</td>
-</tr>
-</tbody>
-</table><ul>
-<li>
-<h2 id="tcp-and-udp-tcpip-programming-and-datagram-programming">TCP and UDP (TCP/IP programming and Datagram Programming)</h2>
-</li>
+    <thead>
+        <tr>
+            <th>GridBag Layout</th>
+            <th>Grid Layout</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>It is a flexible layout manager that aligns the components vertically and horizontally without requiring
+                to have components of same size.</td>
+            <td>It puts all the components in a rectangular grid and is divided into equal size rectangles.</td>
+        </tr>
+        <tr>
+            <td>It places the components in individual cells and also allows to span to multiple column or rows.</td>
+            <td>It places the components in column and rows.</td>
+        </tr>
+        <tr>
+            <td><code>GridBagConstraints</code> objects must be used to make a GridBag layout.</td>
+            <td><code>GridLayout</code> class is used to make object of it.</td>
+        </tr>
+        <tr>
+            <td>It is more flexible.</td>
+            <td>It is less flexible.</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>
+        <h2 id="tcp-and-udp-tcpip-programming-and-datagram-programming">TCP and UDP (TCP/IP programming and Datagram
+            Programming)</h2>
+    </li>
 </ul>
 
 <table>
-<thead>
-<tr>
-<th>TCP</th>
-<th>UDP</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>TCP</em> Stands for Transmission Control Protocal.</td>
-<td><em>UDP</em> Stands for User Datagram Protocal.</td>
-</tr>
-<tr>
-<td>It is a connection oriented protocal.(<em>i.e the communication device should establish connection before and after transmitting data</em>)</td>
-<td>It is a Datagram oriented protocal(<em>i.e there is no overhead for opening a connection.</em>)</td>
-</tr>
-<tr>
-<td>It is more reliable as it makes sure the delivery of data is done.</td>
-<td>It is less reliable as it doesn’t make sure of the delivery.</td>
-</tr>
-<tr>
-<td>It provides extensive error handling mechanism.</td>
-<td>It provides only basic error checking mechanism.</td>
-</tr>
-<tr>
-<td>It is slower than UDP.</td>
-<td>It is faster than TCP.</td>
-</tr>
-<tr>
-<td>It is used by HTTP, FTP, etc.</td>
-<td>It is used by DNS, TFTP, etc.</td>
-</tr>
-<tr>
-<td>TCP has a (20-80) bytes variable length.</td>
-<td>UDP has a 8 byte fixed length header.</td>
-</tr>
-</tbody>
-</table><ul>
-<li>
-<h2 id="datagram-communication-and-stream-communication">Datagram communication and Stream communication</h2>
-</li>
+    <thead>
+        <tr>
+            <th>TCP</th>
+            <th>UDP</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><em>TCP</em> Stands for Transmission Control Protocal.</td>
+            <td><em>UDP</em> Stands for User Datagram Protocal.</td>
+        </tr>
+        <tr>
+            <td>It is a connection oriented protocal.(<em>i.e the communication device should establish connection
+                    before and after transmitting data</em>)</td>
+            <td>It is a Datagram oriented protocal(<em>i.e there is no overhead for opening a connection.</em>)</td>
+        </tr>
+        <tr>
+            <td>It is more reliable as it makes sure the delivery of data is done.</td>
+            <td>It is less reliable as it doesn’t make sure of the delivery.</td>
+        </tr>
+        <tr>
+            <td>It provides extensive error handling mechanism.</td>
+            <td>It provides only basic error checking mechanism.</td>
+        </tr>
+        <tr>
+            <td>It is slower than UDP.</td>
+            <td>It is faster than TCP.</td>
+        </tr>
+        <tr>
+            <td>It is used by HTTP, FTP, etc.</td>
+            <td>It is used by DNS, TFTP, etc.</td>
+        </tr>
+        <tr>
+            <td>TCP has a (20-80) bytes variable length.</td>
+            <td>UDP has a 8 byte fixed length header.</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>
+        <h2 id="datagram-communication-and-stream-communication">Datagram communication and Stream communication</h2>
+    </li>
 </ul>
 
 <table>
-<thead>
-<tr>
-<th>Datagram communication</th>
-<th>Stream communication</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>It is a connection less communication.</td>
-<td>It is a conncetion oriented communication.</td>
-</tr>
-<tr>
-<td>There is no connection just a source and a destination.</td>
-<td>There is a pipe like connection allowing for duples connection.</td>
-</tr>
-<tr>
-<td>It is unreliable.</td>
-<td>It is reliable.</td>
-</tr>
-<tr>
-<td>It doesnot maintain any sequence.</td>
-<td>It maintains sequence.</td>
-</tr>
-</tbody>
-</table><ul>
-<li>
-<h2 id="url-and-url-connection">URL and URL Connection</h2>
-</li>
+    <thead>
+        <tr>
+            <th>Datagram communication</th>
+            <th>Stream communication</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>It is a connection less communication.</td>
+            <td>It is a conncetion oriented communication.</td>
+        </tr>
+        <tr>
+            <td>There is no connection just a source and a destination.</td>
+            <td>There is a pipe like connection allowing for duples connection.</td>
+        </tr>
+        <tr>
+            <td>It is unreliable.</td>
+            <td>It is reliable.</td>
+        </tr>
+        <tr>
+            <td>It doesnot maintain any sequence.</td>
+            <td>It maintains sequence.</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>
+        <h2 id="url-and-url-connection">URL and URL Connection</h2>
+    </li>
 </ul>
 
 <table>
-<thead>
-<tr>
-<th>URL class</th>
-<th>URL connection class</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>It represents an URL.</td>
-<td>It represents a communication link between URL and application.</td>
-</tr>
-<tr>
-<td><code>URL</code> class is used to make an URL object.</td>
-<td><code>URLConnection</code> class is used to make an URL connection object.</td>
-</tr>
-<tr>
-<td><code>getProtocal()</code>, <code>getHost()</code>, etc are used to get the data of the URL.</td>
-<td><code>getInputStream()</code> method is used to read all the data of the webpage.</td>
-</tr>
-</tbody>
-</table><ul>
-<li>
-<h2 id="simple-statements-and-prepared-statements">Simple Statements and Prepared Statements</h2>
-</li>
+    <thead>
+        <tr>
+            <th>URL class</th>
+            <th>URL connection class</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>It represents an URL.</td>
+            <td>It represents a communication link between URL and application.</td>
+        </tr>
+        <tr>
+            <td><code>URL</code> class is used to make an URL object.</td>
+            <td><code>URLConnection</code> class is used to make an URL connection object.</td>
+        </tr>
+        <tr>
+            <td><code>getProtocal()</code>, <code>getHost()</code>, etc are used to get the data of the URL.</td>
+            <td><code>getInputStream()</code> method is used to read all the data of the webpage.</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>
+        <h2 id="simple-statements-and-prepared-statements">Simple Statements and Prepared Statements</h2>
+    </li>
 </ul>
 
 <table>
-<thead>
-<tr>
-<th>Simple Statements</th>
-<th>Prepared Statements</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>It makes the performance little slower.</td>
-<td>It makes the performance faster.</td>
-</tr>
-<tr>
-<td><code>Statement</code> class is used to create a statement object.</td>
-<td><code>PreparedStatement</code> class is used to create a prepared Statement object.</td>
-</tr>
-<tr>
-<td>It is less secure.</td>
-<td>It is more secure.</td>
-</tr>
-<tr>
-<td>The values are given into the query.</td>
-<td>The values are given using setter methods of Prepared Statement.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Simple Statements</th>
+            <th>Prepared Statements</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>It makes the performance little slower.</td>
+            <td>It makes the performance faster.</td>
+        </tr>
+        <tr>
+            <td><code>Statement</code> class is used to create a statement object.</td>
+            <td><code>PreparedStatement</code> class is used to create a prepared Statement object.</td>
+        </tr>
+        <tr>
+            <td>It is less secure.</td>
+            <td>It is more secure.</td>
+        </tr>
+        <tr>
+            <td>The values are given into the query.</td>
+            <td>The values are given using setter methods of Prepared Statement.</td>
+        </tr>
+    </tbody>
 </table>
     </div>
   </div>
