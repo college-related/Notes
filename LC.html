@@ -93,6 +93,8 @@
                         <li><a href="#t-flipflop">T-FlipFlop</a></li>
                         <li><a href="#d-flipflop">D-FlipFlop</a></li>
                         <li><a href="#master-slave-flipflop">Master-slave-FlipFlop</a></li>
+                        <li><a href="#synchronous-up-counter-using-jk-ff">Synchronous up counter using JK FF</a></li>
+                        <li><a href="#asynchronous-down-counter-using-t-ff">Asynchronous down counter using T FF</a></li>
                     </ul>
                 </li>
             </ul>
@@ -2515,6 +2517,597 @@
                             and K terminal of slave ff, also master ff is passive.</li>
                     </ul>
                     <p><img src="./assets/images/master-slave-ff.jpg" alt="Master-slave ff block diagram"></p>
+                </li>
+                <li>
+                    <h2 id="synchronous-up-counter-using-jk-ff">Synchronous up counter using JK FF</h2>
+                    <ul>
+                        <li>The diagram of the counter looks like:-</li>
+                    </ul>
+                    <p><img src="./assets/images/synchronous-up-counter-jk-block.jpg" alt="Synchronous up counter"></p>
+                    <ul>
+                        <li>Excitation table for the counter is:-</li>
+                    </ul>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>A<sub>t</sub></th>
+                                <th>B<sub>t</sub></th>
+                                <th>C<sub>t</sub></th>
+                                <th>A<sub>t+1</sub></th>
+                                <th>B<sub>t+1</sub></th>
+                                <th>C<sub>t+1</sub></th>
+                                <th>J<sub>A</sub></th>
+                                <th>K<sub>A</sub></th>
+                                <th>J<sub>B</sub></th>
+                                <th>K<sub>B</sub></th>
+                                <th>J<sub>C</sub></th>
+                                <th>K<sub>C</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>x</td>
+                                <td>0</td>
+                                <td>x</td>
+                                <td>1</td>
+                                <td>x</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>x</td>
+                                <td>1</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>x</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td>1</td>
+                                <td>x</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>x</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>x</td>
+                                <td>1</td>
+                                <td>x</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>x</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>x</td>
+                                <td>x</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>x</td>
+                                <td>0</td>
+                                <td>x</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>x</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>x</td>
+                                <td>1</td>
+                                <td>x</td>
+                                <td>1</td>
+                                <td>x</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><em><strong>Note: When making k-map look at the inputs with t</strong></em></li>
+                        <li>Now K-Map for J<sub>A</sub></li>
+                    </ul>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>\</th>
+                                <th>~C</th>
+                                <th>C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>~A ~B</strong></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>~AB</strong></td>
+                                <td></td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AB</strong></td>
+                                <td>x</td>
+                                <td>x=1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A~B</strong></td>
+                                <td>x</td>
+                                <td>x</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><strong>J<sub>A</sub> = BC</strong></li>
+                        <li>Now K-Map for J<sub>B</sub></li>
+                    </ul>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>\</th>
+                                <th>~C</th>
+                                <th>C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>~A ~B</strong></td>
+                                <td></td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>~AB</strong></td>
+                                <td>x</td>
+                                <td>x=1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AB</strong></td>
+                                <td>x</td>
+                                <td>x=1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A~B</strong></td>
+                                <td></td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><strong>J<sub>B</sub> = C</strong></li>
+                        <li>Now K-Map for J<sub>C</sub></li>
+                    </ul>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>\</th>
+                                <th>~C</th>
+                                <th>C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>~A ~B</strong></td>
+                                <td>1</td>
+                                <td>x</td>
+                            </tr>
+                            <tr>
+                                <td><strong>~AB</strong></td>
+                                <td>1</td>
+                                <td>x</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AB</strong></td>
+                                <td>1</td>
+                                <td>x</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A~B</strong></td>
+                                <td>1</td>
+                                <td>x</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><strong>J<sub>C</sub> = ~C</strong></li>
+                        <li>Now K-Map for K<sub>A</sub></li>
+                    </ul>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>\</th>
+                                <th>~C</th>
+                                <th>C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>~A ~B</strong></td>
+                                <td>x</td>
+                                <td>x</td>
+                            </tr>
+                            <tr>
+                                <td><strong>~AB</strong></td>
+                                <td>x</td>
+                                <td>x=1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AB</strong></td>
+                                <td></td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A~B</strong></td>
+                                <td>x</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><strong>K<sub>A</sub> = BC</strong></li>
+                        <li>Now K-Map for K<sub>B</sub></li>
+                    </ul>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>\</th>
+                                <th>~C</th>
+                                <th>C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>~A ~B</strong></td>
+                                <td>x</td>
+                                <td>x=1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>~AB</strong></td>
+                                <td></td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AB</strong></td>
+                                <td></td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A~B</strong></td>
+                                <td>x</td>
+                                <td>x=1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><strong>K<sub>B</sub> = C</strong></li>
+                        <li>Now K-Map for K<sub>C</sub></li>
+                    </ul>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>\</th>
+                                <th>~C</th>
+                                <th>C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>~A ~B</strong></td>
+                                <td>x</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>~AB</strong></td>
+                                <td>x</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AB</strong></td>
+                                <td>x</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A~B</strong></td>
+                                <td>x</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><strong>K<sub>C</sub> = C</strong></li>
+                    </ul>
+                    <p><img src="./assets/images/synchronous-up-counter-jk.jpg" alt="synchronous up counter block diagram"></p>
+                </li>
+                <li>
+                    <h2 id="asynchronous-down-counter-using-t-ff">Asynchronous down counter using T FF</h2>
+                    <ul>
+                        <li>The diagram of the counter looks like:-</li>
+                    </ul>
+                    <p><img src="./assets/images/asynchronous-down-counter-t-block.jpg" alt="asynchronous down counter"></p>
+                    <ul>
+                        <li>Excitation table for the counter is:-</li>
+                    </ul>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>A<sub>t</sub></th>
+                                <th>B<sub>t</sub></th>
+                                <th>C<sub>t</sub></th>
+                                <th>A<sub>t+1</sub></th>
+                                <th>B<sub>t+1</sub></th>
+                                <th>C<sub>t+1</sub></th>
+                                <th>T<sub>A</sub></th>
+                                <th>T<sub>B</sub></th>
+                                <th>T<sub>C</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><em><strong>Note: When making k-map look at the inputs with t</strong></em></li>
+                        <li>Now K-Map for T<sub>A</sub></li>
+                    </ul>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>\</th>
+                                <th>~C</th>
+                                <th>C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>~A ~B</strong></td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>~AB</strong></td>
+                                <td></td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AB</strong></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>A~B</strong></td>
+                                <td></td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><strong>T<sub>A</sub> = ~A ~B ~C + ~ABC + A ~BC = ~A ~B ~C + C(A xor B)</strong></li>
+                        <li>Now K-Map for T<sub>B</sub></li>
+                    </ul>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>\</th>
+                                <th>~C</th>
+                                <th>C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>~A ~B</strong></td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>~AB</strong></td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>AB</strong></td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>A~B</strong></td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><strong>T<sub>B</sub> = ~C</strong></li>
+                        <li>Now K-Map for T<sub>C</sub></li>
+                    </ul>
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>\</th>
+                                <th>~C</th>
+                                <th>C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>~A ~B</strong></td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>~AB</strong></td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AB</strong></td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A~B</strong></td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><strong>T<sub>C</sub> = 1</strong></li>
+                    </ul>
+                    <p><img src="./assets/images/asynchronous-down-counter-t.jpg" alt="asynchronous down counter block diagram"></p>
                 </li>
             </ul>
 
