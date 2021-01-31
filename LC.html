@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <style>
+        .big-img {
+            transform: rotate(-90deg);
+            max-width: 50%;
+            padding: 0;
+            margin: 0;
+        }
+
         @media screen and (max-width: 700px) {
             .stackedit__html>ul {
                 padding-left: 0;
@@ -93,6 +100,13 @@
                         <li><a href="#t-flipflop">T-FlipFlop</a></li>
                         <li><a href="#d-flipflop">D-FlipFlop</a></li>
                         <li><a href="#master-slave-flipflop">Master-slave-FlipFlop</a></li>
+                    </ul>
+                </li>
+                <li><a href="#chapter-8">Chapter 8</a>
+                    <ul>
+                        <li><a href="#register">Register</a></li>
+                        <li><a href="#shift-register">Shift Register</a></li>
+                        <li><a href="#counter">Counter</a></li>
                         <li><a href="#synchronous-up-counter-using-jk-ff">Synchronous up counter using JK FF</a></li>
                         <li><a href="#asynchronous-down-counter-using-t-ff">Asynchronous down counter using T FF</a></li>
                     </ul>
@@ -561,7 +575,7 @@
                                         <li>If no carry simply write the answer to binary code.</li>
                                         <li>repeat until all bit in gray code is added</li>
                                     </ol>
-                                    <p><img src="./assets/images/" alt="gray code to binary"></p>
+                                    <p><img src="./assets/images/gray-to-binary.jpg" class="big-img" alt="gray code to binary"></p>
                                 </li>
                                 <li>
                                     <p><strong>Binary to Gray</strong></p>
@@ -574,7 +588,7 @@
                                         <li>Repeat for 2<sup>nd</sup> and 3<sup>rd</sup> and so on until all bits are
                                             added.</li>
                                     </ol>
-                                    <p><img src="./assets/images" alt="binary to gray code"></p>
+                                    <p><img src="./assets/images/binary-to-gray.jpg" class="big-img" alt="binary to gray code"></p>
                                 </li>
                             </ul>
                         </li>
@@ -2518,6 +2532,141 @@
                     </ul>
                     <p><img src="./assets/images/master-slave-ff.jpg" alt="Master-slave ff block diagram"></p>
                 </li>
+            </ul>
+            <h1 id="chapter-8"><code>Chapter 8</code></h1>
+            <ul>
+                <li>
+                    <h2 id="register">Register</h2>
+                    <ul>
+                        <li>Register is a memory element for holding binary information. A group of flipflop makes a register. A
+                            n-bit register has a group of n-flipflops.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h2 id="shift-register">Shift Register</h2>
+                    <ul>
+                        <li>A register which is capable of shifting its binary information either to left or right is called a shift
+                            register.</li>
+                        <li>There are four types of shift registers:-
+                            <ul>
+                                <li>
+                                    <h3 id="serial-in-serial-out-siso-shift-register">Serial In Serial Out (SISO) shift register
+                                    </h3>
+                                    <ul>
+                                        <li>It is the shift register that takes in input bits serially i.e one bit at a time on a
+                                            single line also produces output serially.</li>
+                                    </ul>
+                                    <p><img src="./assets/images/siso-block.jpg" alt="4-bit SISO"></p>
+                                    <ul>
+                                        <li>
+                                            <p>Considering a 4-bit SISO, and input bits 1010</p>
+                                            <ul>
+                                                <li>At CP 1, Q<sub>0</sub> = 0</li>
+                                                <li>At CP 2, Q<sub>0</sub> = 1, Q<sub>1</sub> = 0</li>
+                                                <li>At CP 3, Q<sub>0</sub> = 0, Q<sub>1</sub> = 1, Q<sub>2</sub> = 0</li>
+                                                <li>At CP 4, Q<sub>0</sub> = 1, Q<sub>1</sub> = 0, Q<sub>2</sub> = 1, Q<sub>3</sub>
+                                                    = 0</li>
+                                                <li>At CP 5, Q<sub>1</sub> = 1, Q<sub>2</sub> = 0, Q<sub>3</sub> = 1</li>
+                                                <li>At CP 6, Q<sub>2</sub> = 1, Q<sub>3</sub> = 0</li>
+                                                <li>At CP 7, Q<sub>3</sub> = 1</li>
+                                            </ul>
+                                            <p><img src="./assets/images/siso-timing.jpg" alt="timing diagram of 4-bit SISO"></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3 id="parallel-in-parallel-out-pipo-shift-register">Parallel In Parallel Out (PIPO) shift
+                                        register</h3>
+                                    <ul>
+                                        <li>It is the shift register that takes data inputs simultaneously at same time and produces
+                                            the output bits parallelly too.</li>
+                                    </ul>
+                                    <p><img src="./assets/images/pipo-block.jpg" alt="4-bit PIPO"></p>
+                                    <ul>
+                                        <li>
+                                            <p>Considering a 4-bit PIPO, and input bits 1010</p>
+                                            <ul>
+                                                <li>D<sub>0</sub> = 1, D<sub>1</sub> = 0, D<sub>2</sub> = 1, D<sub>3</sub> = 0</li>
+                                                <li>At CP 4, Q<sub>0</sub> = 1, Q<sub>1</sub> = 0, Q<sub>2</sub> = 1, Q<sub>3</sub>
+                                                    = 0</li>
+                                            </ul>
+                                            <p><img src="./assets/images/pipo-timing.jpg" alt="timing diagram of 4-bit PIPO"></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3 id="serial-in-parallel-out-sipo-shift-register">Serial In Parallel Out (SIPO) shift register
+                                    </h3>
+                                    <ul>
+                                        <li>It is the shift register that takes data inputs serially one at a time but gives the
+                                            output bits simultaneously.</li>
+                                    </ul>
+                                    <p><img src="./assets/images/sipo-block.jpg" alt="4-bit SIPO"></p>
+                                    <ul>
+                                        <li>
+                                            <p>Considering a 4-bit SIPO, and input bits 1010</p>
+                                            <ul>
+                                                <li>At CP 1, Q<sub>0</sub> = 0</li>
+                                                <li>At CP 2, Q<sub>0</sub> = 1, Q<sub>1</sub> = 0</li>
+                                                <li>At CP 3, Q<sub>0</sub> = 0, Q<sub>1</sub> = 1, Q<sub>2</sub> = 0</li>
+                                                <li>At CP 4, Q<sub>0</sub> = 1, Q<sub>1</sub> = 0, Q<sub>2</sub> = 1, Q<sub>3</sub>
+                                                    = 0</li>
+                                            </ul>
+                                            <p><img src="./assets/images/sipo-timing.jpg" alt="timing diagram of 4-bit SIPO"></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3 id="parallel-in-serial-out-piso-shift-register">Parallel In Serial Out (PISO) shift register
+                                    </h3>
+                                    <ul>
+                                        <li>It is the shift register that takes input bits parallelly at the same time but gives the
+                                            output serially one at a time.</li>
+                                    </ul>
+                                    <p><img src="./assets/images/piso-block.jpg" alt="4-bit PISO"></p>
+                                    <ul>
+                                        <li>
+                                            <p>Considering a 4-bit PISO, and input bits 1010</p>
+                                            <ul>
+                                                <li>At CP 1, Q<sub>0</sub> = 1, Q<sub>1</sub> = 0, Q<sub>2</sub> = 1, Q<sub>3</sub>
+                                                    = 0</li>
+                                                <li>At CP 2, Q<sub>1</sub> = 0, Q<sub>2</sub> = 1, Q<sub>3</sub> = 0</li>
+                                                <li>At CP 3, Q<sub>2</sub> = 1, Q<sub>3</sub> = 0</li>
+                                                <li>At CP 4, Q<sub>3</sub> = 0</li>
+                                            </ul>
+                                            <p><img src="./assets/images/piso-timing.jpg" alt="timing diagram of 4-bit PISO"></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2 id="counter">Counter</h2>
+                    <ul>
+                        <li>It is a sequential device made up of group of flipflops that are connected together to perform counting
+                            operation.</li>
+                        <li>It is of 2 types:-
+                            <ol>
+                                <li>Asynchronous counter
+                                    <ul>
+                                        <li>It is the type of counter where the timing for clock pulse for each flipflop is
+                                            different, i.e the first flipflop is given the external clock pulse, and then each
+                                            successive flipflop is clocked by output of preceding flipflop.</li>
+                                        <li>It is also called as ripple counter</li>
+                                    </ul>
+                                </li>
+                                <li>Synchronous counter
+                                    <ul>
+                                        <li>It is the type of counter where the timing for clock pulse for each flipflop is same,
+                                            i,e every flipflop is given the same external clock pulse at the same time.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
                 <li>
                     <h2 id="synchronous-up-counter-using-jk-ff">Synchronous up counter using JK FF</h2>
                     <ul>
@@ -3110,7 +3259,6 @@
                     <p><img src="./assets/images/asynchronous-down-counter-t.jpg" alt="asynchronous down counter block diagram"></p>
                 </li>
             </ul>
-
         </div>
     </div>
 </body>
