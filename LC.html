@@ -110,6 +110,13 @@
                         <li><a href="#synchronous-up-counter-using-jk-ff">Synchronous up counter using JK FF</a></li>
                         <li><a href="#asynchronous-down-counter-using-t-ff">Asynchronous down counter using T FF</a></li>
                     </ul>
+                </li>       
+                <li><a href="#difference-between">Difference between</a>
+                    <ul>
+                        <li><a href="#latch-and-flipflops">Latch and Flipflops</a></li>
+                        <li><a href="#synchronous-and-asynchronous-counter">Synchronous and asynchronous counter</a></li>
+                        <li><a href="#combinational-and-sequential-circuit">Combinational and Sequential circuit</a></li>
+                    </ul>
                 </li>
             </ul>
 
@@ -3259,6 +3266,113 @@
                     <p><img src="./assets/images/asynchronous-down-counter-t.jpg" alt="asynchronous down counter block diagram"></p>
                 </li>
             </ul>
+            <h1 id="difference-between"><code>Difference between</code></h1>
+            <ul>
+                <li>
+                    <h2 id="latch-and-flipflops">Latch and Flipflops</h2>
+                </li>
+            </ul>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Latch</th>
+                        <th>FlipFlop</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>It is a sequential logic circuit that is used to store binary information made using logic gates.</td>
+                        <td>It is a sequential logic circuit used to store binary information made using latch and clock signals.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>It is based on level triggering approach.</td>
+                        <td>It is based on edge triggering approach.</td>
+                    </tr>
+                    <tr>
+                        <td>It is complex to implement and has faster operation speed.</td>
+                        <td>It is easy to implement and has slower operation speed compared to latch.</td>
+                    </tr>
+                    <tr>
+                        <td>The operation depends on present, past input and past output values.</td>
+                        <td>The operations depends on present, past input and past output values along with clock pulse.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>
+                    <h2 id="synchronous-and-asynchronous-counter">Synchronous and asynchronous counter</h2>
+                </li>
+            </ul>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Synchronous Counter</th>
+                        <th>Asynchronous Counter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>In synchronous counter, all flip flops are triggered with same clock simultaneously.</td>
+                        <td>In asynchronous counter, different flip flops are triggered with different clock, not simultaneously.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Synchronous Counter is faster than asynchronous counter in operation.</td>
+                        <td>Asynchronous Counter is slower than synchronous counter in operation.</td>
+                    </tr>
+                    <tr>
+                        <td>Synchronous Counter will operate in any desired count sequence.</td>
+                        <td>Asynchronous Counter will operate only in fixed count sequence (UP/DOWN).</td>
+                    </tr>
+                    <tr>
+                        <td>Synchronous Counter designing as well implementation are complex due to increasing the number of states.
+                        </td>
+                        <td>Asynchronous Counter designing as well as implementation is very easy.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>
+                    <h2 id="combinational-and-sequential-circuit">Combinational and Sequential circuit</h2>
+                </li>
+            </ul>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Combinational Circuit</th>
+                        <th>Sequential Circuit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The logic circuits that depends upon the present input values only to determine the output of the
+                            instance are called combinational logic circuit.</td>
+                        <td>The logic circuits that depends upon the present input values as well as past output values for
+                            determining the output of the instance are called sequential logic circuit.</td>
+                    </tr>
+                    <tr>
+                        <td>It does not have any feedback path as well as memory elements.</td>
+                        <td>It has both feedback path and memory elements.</td>
+                    </tr>
+                    <tr>
+                        <td>The operations doesn’t depend on clock transition.</td>
+                        <td>The operations depend on clock transition.</td>
+                    </tr>
+                    <tr>
+                        <td>The circuit are easy to implement and can be described using truth table.</td>
+                        <td>The circuit are harder to implement compared to combinational and can be described using truth table as
+                            well as timing diagram.</td>
+                    </tr>
+                    <tr>
+                        <td>Example: Adder, Encoder, etc.</td>
+                        <td>Example: Latch, flipflop, counter, etc</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
