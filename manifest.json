@@ -5,7 +5,7 @@
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/DSA-Test/",
-    "start_url": "/",
+    "start_url": "/DSA-Test/",
     "icons": [
         {
             "src": "./assets/icons/maskable.png",
