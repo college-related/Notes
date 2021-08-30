@@ -4,8 +4,8 @@
     "theme_color": "#2196f3",
     "background_color": "#ffffff",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
+    "scope": "DSA-Test/",
+    "start_url": "DSA-Test/",
     "icons": [
         {
             "src": "./assets/icons/maskable.png",
