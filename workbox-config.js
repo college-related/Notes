@@ -1,11 +1,11 @@
 module.exports = {
-	globDirectory: 'js/',
+	globDirectory: 'DSA-Test/',
 	globPatterns: [
-		'**/*.js'
+		'**/*.{png,ico,jpg,JPG,gif,css,html,js}'
 	],
 	ignoreURLParametersMatching: [
 		/^utm_/,
 		/^fbclid$/
 	],
-	swDest: 'js/sw.js'
+	swDest: 'DSA-Test/js/sw.js'
 };
