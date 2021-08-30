@@ -7,7 +7,7 @@ module.exports = {
 		/^utm_/,
 		/^fbclid$/
 	],
-	swDest: 'DSA-Test/js/sw.js',
+	swDest: 'sw.js',
 	runtimeCaching: [{
 		// Match any request that ends with .png, .jpg, .jpeg or .svg.
 		urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
