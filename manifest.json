@@ -4,7 +4,7 @@
     "theme_color": "#2196f3",
     "background_color": "#ffffff",
     "display": "standalone",
-    "scope": "DSA-Test/",
+    "scope": "/",
     "start_url": "/",
     "icons": [
         {
