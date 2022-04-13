@@ -30,7 +30,9 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
 }
-
+h1,h2,h3 {
+    scroll-margin-block-start: 30px;
+}
 .menu, .closeMenu {
     cursor: pointer;
     position: fixed;
