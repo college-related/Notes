@@ -6,35 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>old-questions</title>
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
-  <link rel="shortcut icon" href="./assets/icons/favicon.ico">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#2196f3"/>
-  
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackedit.io/style.css" />
-<link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2196f3"/>
+    
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <link rel="stylesheet" href="./css/style.css">
 
-<style>
-  @media screen and (max-width: 700px){
-    .stackedit__html>ul {
-      padding-left: 0;
-    }
+  <style>
+    @media screen and (max-width: 700px){
+      .stackedit__html>ul {
+        padding-left: 0;
+      }
 
-    table {
-      font-size: .5rem;
-    }
+      table {
+        font-size: .5rem;
+      }
 
-    .tb {
-      font-size: .2rem;
-    }
+      .tb {
+        font-size: .2rem;
+      }
 
-    code {
-      max-width: 370px;
+      code {
+        max-width: 370px;
+      }
     }
-  }
-</style>
+  </style>
 
 <script defer src="./js/script.js"></script>
 </head>
@@ -53,6 +53,7 @@
 <li><a href="#critical-section-and-minimum-requirements-for-a-solution-of-critical-section-problem">Critical section and minimum requirements for a solution of Critical section problem</a></li>
 <li><a href="#semaphores">Semaphores</a></li>
 <li><a href="#solution-to-dining-philosopher-problem-using-semaphores.">Solution to Dining philosopher problem using semaphores.</a></li>
+<li><a href="#methods-of-logical-implementation-of-message-passing">Methods of logical implementation of message passing</a></li>
 </ul>
 </li>
 </ul>
@@ -115,6 +116,35 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+<h2 id="methods-of-logical-implementation-of-message-passing">Methods of logical implementation of message passing</h2>
+<ul>
+<li>Message passing is a important concept in IPC (Interprocess communication) that allows processes to interact with each other and communicate for completing certain tasks.</li>
+<li>There are 2 main functions message passing system provides
+<ul>
+<li><strong>Send</strong> : To send message</li>
+<li><strong>Recieve</strong>: To receive message</li>
+</ul>
+</li>
+<li>The logical implementation of message passing system are:-
+<ol>
+<li><strong>Direct communication</strong> - In this method of implementation the processes directly send and recieve message among each other. It is done by using send function as send(A, message) which means A is sending message and recieve function as recieve(A, message) which means recieving message sent by A</li>
+<li><strong>Indirect communication</strong>- In this method of implementation the processes send the message first to a mailbox or queue then receive the message from that mailbox. Using send(M, message) send message to mailbox M and recieve(M, message) to receive message from mailbox M</li>
+<li><strong>Synchronous and asychronous</strong>
+<ul>
+<li>Synchronous or blocking method is where the sending or receiving end is blocked until the other end response. It has two ways: <strong>blocking send</strong> which means block the sender until message is recieved first and <strong>blocking recieve</strong> which means blocking any recieved message until it sends a message</li>
+<li>Asynchronous or non-blocking method is where there is no blocking to any end of the communication. Sender sends the message and resume the operation and the reciever gets message which can be null also</li>
+</ul>
+</li>
+<li><strong>Automatic and explict buffer</strong> - In this method we have a temporary queue that holds the message before sending it. It is of 3 types:
+<ul>
+<li><strong>Zero capacity</strong> which means blocking send type no queue at all</li>
+<li><strong>Bounded capacity</strong> which means a finite length of queue until which sender can send but after full again blocking the send</li>
+<li><strong>Unbounded capacity</strong> which means an infinite length of queue and message never gets blocked.</li>
+</ul>
+</li>
+</ol>
 </li>
 </ul>
 
